@@ -37,31 +37,10 @@ document.addEventListener('DOMContentLoaded', () => {
         lastScroll = currentScroll;
     });
     
-    // Active section highlighting
-    const sections = document.querySelectorAll('section[id]');
-    
-    function highlightNavigation() {
-        const scrollPosition = window.scrollY + 100;
-        
-        sections.forEach(section => {
-            const sectionTop = section.offsetTop;
-            const sectionHeight = section.offsetHeight;
-            const sectionId = section.getAttribute('id');
-            
-            if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
-                navLinks.forEach(link => {
-                    link.classList.remove('active');
-                    if (link.getAttribute('href') === `#${sectionId}`) {
-                        link.classList.add('active');
-                    }
-                });
-            }
-        });
-    }
-    
-    window.addEventListener('scroll', highlightNavigation);
-    highlightNavigation(); // Initial call
-    
+    // Active section highlighting — funksiyanın özü faylın sonunda (debounce
+    // ilə birlikdə) tanımlanır, burada yalnız ilkin çağırış edilir.
+    highlightNavigation();
+
     // Scroll to Top Button
     const scrollToTopBtn = document.getElementById('scrollToTop');
     
@@ -191,6 +170,26 @@ function debounce(func, wait = 10, immediate = true) {
         timeout = setTimeout(later, wait);
         if (callNow) func.apply(context, args);
     };
+}
+
+// Scroll-da hansı bölmədə olduğumuzu tapıb uyğun nav-link-i "active" edir
+function highlightNavigation() {
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-link');
+    let currentSectionId = '';
+
+    sections.forEach((section) => {
+        const rect = section.getBoundingClientRect();
+        // Header hündürlüyünə görə bir az yuxarı sərhəd payı
+        if (rect.top <= 120 && rect.bottom > 120) {
+            currentSectionId = section.getAttribute('id');
+        }
+    });
+
+    navLinks.forEach((link) => {
+        const isActive = link.getAttribute('href') === `#${currentSectionId}`;
+        link.classList.toggle('active', isActive);
+    });
 }
 
 // Apply debounce to scroll-intensive functions
