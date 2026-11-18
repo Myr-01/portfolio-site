@@ -1035,3 +1035,6 @@ ul {
 .services-grid, .portfolio-grid.four { grid-template-columns: repeat(4, 1fr); }
 @media (max-width: 1100px) { .services-grid, .portfolio-grid.four { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 600px) { .services-grid, .portfolio-grid.four { grid-template-columns: 1fr; } }
+/* Şəkillər 16:10 düzbucaqlı: ekran görüntüsü kəsilmədən görünür */
+.portfolio-image { height: auto; aspect-ratio: 16 / 10; }
+.portfolio-image img { object-fit: cover; object-position: top center; }
