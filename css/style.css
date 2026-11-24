@@ -116,7 +116,7 @@ strong {
    ========================================== */
 
 .layout {
-    max-width: 1280px;
+    max-width: 1440px;
     margin: 0 auto;
     padding: 0 24px;
 }
@@ -142,7 +142,7 @@ strong {
         top: 0;
         height: 100vh;
         max-height: 100vh;
-        width: 40%;
+        width: 34%;
         flex-shrink: 0;
         padding: 96px 0;
         display: flex;
@@ -151,7 +151,8 @@ strong {
     }
 
     .main {
-        width: 56%;
+        flex: 1;
+        min-width: 0;
         padding-top: 96px;
     }
 }
@@ -600,7 +601,7 @@ strong {
 
 @media (min-width: 768px) {
     .featured-image {
-        grid-column: 6 / -1;
+        grid-column: 5 / -1;
         grid-row: 1 / -1;
         border: 1px solid var(--line);
     }
@@ -626,7 +627,7 @@ strong {
 
     /* Kart şəklə yalnız 1 sütun girir: şəklin çox hissəsi açıq qalır */
     .featured-content {
-        grid-column: 1 / 7;
+        grid-column: 1 / 6;
         grid-row: 1 / -1;
         padding: 0;
     }
@@ -642,11 +643,11 @@ strong {
 
     /* Növbələşmə: cüt kartlarda şəkil solda, mətn sağda */
     .featured:nth-child(even) .featured-image {
-        grid-column: 1 / 8;
+        grid-column: 1 / 9;
     }
 
     .featured:nth-child(even) .featured-content {
-        grid-column: 7 / -1;
+        grid-column: 8 / -1;
         text-align: right;
     }
 
@@ -655,9 +656,9 @@ strong {
     }
 }
 
-/* 1024–1199 px: sağ sütun dardır, üst-üstə düşmə sıxılır.
-   Burada şəkil yuxarıda, mətn altda. */
-@media (min-width: 1024px) and (max-width: 1199px) {
+/* 1024–1279 px: sağ sütun dardır, üst-üstə düşmə sıxılır.
+   Burada şəkil yuxarıda (tam en), mətn altda. */
+@media (min-width: 1024px) and (max-width: 1279px) {
     .featured .featured-image,
     .featured:nth-child(even) .featured-image {
         grid-column: 1 / -1;
