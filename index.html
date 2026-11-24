@@ -6,6 +6,7 @@
     <title>Mərdan Ağcabəyli — Sayt, SEO və AI alətləri</title>
     <meta name="description" content="Mərdan Ağcabəyli: kiçik bizneslər üçün WordPress sayt, texniki SEO, sayt monitorinqi və AI ilə qurulan alətlər. Bakı.">
     <meta name="author" content="Mərdan Ağcabəyli">
+    <meta name="theme-color" content="#070b16">
 
     <meta property="og:type" content="website">
     <meta property="og:title" content="Mərdan Ağcabəyli — Sayt, SEO və AI alətləri">
@@ -16,267 +17,234 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <nav class="navbar" id="navbar">
-        <div class="container">
-            <a href="#hero" class="logo">Mərdan</a>
-            <button class="nav-toggle" id="navToggle" aria-label="Menyunu aç">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="#hero" class="nav-link active">Ana səhifə</a></li>
-                <li><a href="#services" class="nav-link">Xidmətlər</a></li>
-                <li><a href="#portfolio" class="nav-link">Layihələr</a></li>
-                <li><a href="#about" class="nav-link">Haqqımda</a></li>
-                <li><a href="#contact" class="nav-link">Əlaqə</a></li>
-            </ul>
-        </div>
-    </nav>
+    <div class="spotlight" aria-hidden="true"></div>
+    <a class="skip-link" href="#content">Məzmuna keç</a>
 
-    <section id="hero" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <p class="hero-subtitle">Sayt · SEO · AI ilə alətlər</p>
-                <h1 class="hero-title">Salam, mən <span class="highlight">Mərdan Ağcabəyli</span></h1>
-                <p class="hero-description">Kiçik bizneslər üçün sayt qururam, onları axtarışda görünən edirəm və gündəlik işi asanlaşdıran alətlər hazırlayıram. Alpha Media-da IT mütəxəssisiyəm, AI kod agentləri ilə öz məhsullarımı qururam.</p>
-                <div class="hero-actions">
+    <div class="layout">
+        <!-- ================= Sol sütun (sabit) ================= -->
+        <header class="side">
+            <div>
+                <h1 class="side-name"><a href="#about">Mərdan Ağcabəyli</a></h1>
+                <p class="side-role">Sayt · SEO · AI ilə alətlər</p>
+                <p class="side-tagline">Kiçik bizneslər üçün sayt qururam, onları axtarışda görünən edirəm və gündəlik işi asanlaşdıran alətlər hazırlayıram.</p>
+
+                <nav class="side-nav" aria-label="Bölmələr">
+                    <ul>
+                        <li><a href="#about" class="active"><span class="nav-line"></span><span class="nav-text">Haqqımda</span></a></li>
+                        <li><a href="#experience"><span class="nav-line"></span><span class="nav-text">Təcrübə</span></a></li>
+                        <li><a href="#projects"><span class="nav-line"></span><span class="nav-text">Layihələr</span></a></li>
+                        <li><a href="#services"><span class="nav-line"></span><span class="nav-text">Xidmətlər</span></a></li>
+                        <li><a href="#contact"><span class="nav-line"></span><span class="nav-text">Əlaqə</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="side-bottom">
+                <div class="side-actions">
                     <a href="https://wa.me/994517881550" target="_blank" rel="noopener noreferrer" class="btn btn-primary">WhatsApp-da yazın</a>
-                    <a href="#portfolio" class="btn btn-secondary">Layihələrə baxın</a>
+                    <a href="assets/cv/Merdan-Agcabeyli-CV.pdf" download class="btn btn-ghost">CV (PDF)</a>
                 </div>
+                <ul class="socials" aria-label="Sosial">
+                    <li><a href="https://github.com/Myr-01" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub">
+                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                    </a></li>
+                    <li><a href="mailto:merdanagcabeyli@gmail.com" aria-label="E-poçt" title="E-poçt">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+                    </a></li>
+                    <li><a href="https://wa.me/994517881550" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" title="WhatsApp">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+                    </a></li>
+                </ul>
             </div>
-        </div>
-    </section>
+        </header>
 
-    <section id="services" class="services">
-        <div class="container">
-            <h2 class="section-title">Xidmətlər</h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" /></svg>
-                    </div>
-                    <h3 class="service-title">WordPress sayt</h3>
-                    <p class="service-description">Şirkət saytı və ya kataloq: qurulma, mobil uyğunluq, sürət və təhlükəsizlik.</p>
-                    <ul class="service-features">
-                        <li>Korporativ və kataloq saytları</li>
-                        <li>Çoxdilli səhifələr</li>
-                        <li>Hosting, domen, SSL</li>
-                    </ul>
-                </div>
+        <!-- ================= Sağ sütun (scroll) ================= -->
+        <main id="content" class="main">
 
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
-                    </div>
-                    <h3 class="service-title">Texniki SEO audit</h3>
-                    <p class="service-description">Saytınızı yoxlayıb problemləri vaciblik sırası ilə göstərirəm və düzəldirəm.</p>
-                    <ul class="service-features">
-                        <li>Başlıq, meta, struktur</li>
-                        <li>İndeksləmə və sınıq linklər</li>
-                        <li>HTML / PDF hesabat</li>
-                    </ul>
-                </div>
+            <section id="about" class="section" aria-label="Haqqımda">
+                <h2 class="section-heading"><span class="num">01.</span> Haqqımda</h2>
+                <p>Alpha Media-da <strong>IT mütəxəssisiyəm</strong>: WordPress saytlar qururam, texniki SEO və sayt idarəsi ilə məşğul oluram. Hər gün real bizneslərin saytları ilə işləyirəm. Sayt dayananda, SSL-in vaxtı bitəndə, Google səhifəni görməyəndə bunu ilk eşidən mən oluram.</p>
+                <p>Bu işdən çıxan ehtiyacları <strong>öz məhsullarıma</strong> çevirirəm: saytları izləyən panel, SEO problemlərini tapan alət, şirkət üçün anbar sistemi. Onları AI kod agentləri ilə qururam. İstiqaməti və tələbləri mən təyin edirəm, nəticəni canlı saytda özüm yoxlayıram.</p>
+                <p>Azərbaycan Texniki Universitetində mexatronika və robototexnika üzrə 3-cü kursda oxuyuram.</p>
+            </section>
 
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" /></svg>
-                    </div>
-                    <h3 class="service-title">Monitorinq və baxım</h3>
-                    <p class="service-description">Saytınız dayananda, SSL və ya domen vaxtı bitəndə ilk siz bilirsiniz.</p>
-                    <ul class="service-features">
-                        <li>Uptime və cavab vaxtı</li>
-                        <li>SSL / domen xəbərdarlığı</li>
-                        <li>Aylıq baxım və yeniləmə</li>
-                    </ul>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" /></svg>
-                    </div>
-                    <h3 class="service-title">AI + kodla alətlər</h3>
-                    <p class="service-description">Excel-də, kağızda görülən işi sadə veb proqrama çevirirəm.</p>
-                    <ul class="service-features">
-                        <li>Anbar, sifariş, hesabat</li>
-                        <li>Rollar və giriş hüquqları</li>
-                        <li>Excel import / export</li>
-                    </ul>
-                </div>
-            </div>
-            <p class="services-note">Qiymət işin həcminə görədir. Qısa yazın, eyni gün cavab verirəm.</p>
-        </div>
-    </section>
-
-    <section id="portfolio" class="portfolio">
-        <div class="container">
-            <h2 class="section-title">Layihələr</h2>
-
-            <h3 class="portfolio-group">Öz məhsullarım</h3>
-            <div class="portfolio-grid">
-                <article class="portfolio-card">
-                    <a class="portfolio-image" href="https://sitemonitor.com.az" target="_blank" rel="noopener noreferrer">
-                        <img src="assets/images/sitemonitor.jpg" alt="SiteMonitor paneli" loading="lazy">
-                    </a>
-                    <div class="portfolio-content">
-                        <h3 class="portfolio-title">SiteMonitor</h3>
-                        <p class="portfolio-description">Veb agentliklər üçün saytları izləyən panel: uptime, SSL, domen və SEO yoxlamaları, email və Telegram bildirişləri, çox istifadəçi və rollar.</p>
-                        <div class="portfolio-tags">
-                            <span class="tag">React + TS</span>
-                            <span class="tag">Node.js</span>
-                            <span class="tag">Canlı</span>
+            <section id="experience" class="section" aria-label="Təcrübə">
+                <h2 class="section-heading"><span class="num">02.</span> Təcrübə</h2>
+                <ol class="exp-list">
+                    <li class="exp-item">
+                        <p class="exp-date">Apr 2025 — İndi</p>
+                        <div class="exp-body">
+                            <h3 class="exp-title">IT mütəxəssisi · <span class="accent">Alpha Media</span></h3>
+                            <p>5 WordPress saytın qurulması və idarəsi, texniki SEO, hosting, domen və SSL işləri, əməkdaşlara texniki dəstək.</p>
+                            <ul class="pills">
+                                <li>WordPress</li><li>Texniki SEO</li><li>Hosting</li><li>Cloudflare</li>
+                            </ul>
                         </div>
-                        <a class="portfolio-more" href="https://sitemonitor.com.az" target="_blank" rel="noopener noreferrer">sitemonitor.com.az →</a>
-                    </div>
-                </article>
-
-                <article class="portfolio-card">
-                    <div class="portfolio-image">
-                        <img src="assets/images/seo-auditor.jpg" alt="SEO Audit plugininin WordPress admin panelindəki hesabatı" loading="lazy">
-                    </div>
-                    <div class="portfolio-content">
-                        <h3 class="portfolio-title">SEO Auditor + WordPress plugin</h3>
-                        <p class="portfolio-description">Saytı gəzib texniki SEO problemlərini vaciblik sırası ilə göstərən alət. Python CLI və WordPress admin panelində işləyən plugin versiyası var.</p>
-                        <div class="portfolio-tags">
-                            <span class="tag">Python</span>
-                            <span class="tag">Playwright</span>
-                            <span class="tag">WP plugin</span>
+                    </li>
+                    <li class="exp-item">
+                        <p class="exp-date">Paralel</p>
+                        <div class="exp-body">
+                            <h3 class="exp-title">Öz məhsullar · <span class="accent">SiteMonitor və alətlər</span></h3>
+                            <p>Agentliklər üçün sayt monitorinqi paneli, texniki SEO audit aləti və WordPress plugini, şirkət daxili anbar sistemi. Hamısı canlı istifadə olunur.</p>
+                            <ul class="pills">
+                                <li>React</li><li>TypeScript</li><li>Node.js</li><li>Python</li><li>AI agentlər</li>
+                            </ul>
                         </div>
-                    </div>
-                </article>
-
-                <article class="portfolio-card">
-                    <div class="portfolio-image">
-                        <img src="assets/images/anbar.jpg" alt="SmartExpo Anbar sisteminin giriş ekranı" loading="lazy">
-                    </div>
-                    <div class="portfolio-content">
-                        <h3 class="portfolio-title">SmartExpo Anbar</h3>
-                        <p class="portfolio-description">Sərgi stendləri şirkəti üçün daxili anbar sistemi: malların çıxış və qayıdışı, sərgi hesabatları, Excel import, rəhbər / anbardar / IT rolları.</p>
-                        <div class="portfolio-tags">
-                            <span class="tag">React</span>
-                            <span class="tag">Express + SQLite</span>
-                            <span class="tag">Daxili sistem</span>
+                    </li>
+                    <li class="exp-item">
+                        <p class="exp-date">Təhsil</p>
+                        <div class="exp-body">
+                            <h3 class="exp-title">Mexatronika və robototexnika · <span class="accent">AzTU</span></h3>
+                            <p>Azərbaycan Texniki Universiteti, 3-cü kurs.</p>
                         </div>
-                    </div>
-                </article>
-            </div>
+                    </li>
+                </ol>
+                <a class="arrow-link" href="assets/cv/Merdan-Agcabeyli-CV.pdf" download>Tam CV-ni yüklə (PDF) <span aria-hidden="true">↓</span></a>
+            </section>
 
-            <h3 class="portfolio-group">Alpha Media üçün WordPress saytlar</h3>
-            <div class="portfolio-grid four">
-                <article class="portfolio-card">
-                    <a class="portfolio-image" href="https://hamdgroup.az" target="_blank" rel="noopener noreferrer">
-                        <img src="assets/images/hamdgroup.jpg" alt="Hamd Group saytı" loading="lazy">
-                    </a>
-                    <div class="portfolio-content">
-                        <h3 class="portfolio-title">Hamd Group</h3>
-                        <p class="portfolio-description">Korporativ şirkət saytı.</p>
-                        <a class="portfolio-more" href="https://hamdgroup.az" target="_blank" rel="noopener noreferrer">hamdgroup.az →</a>
-                    </div>
-                </article>
+            <section id="projects" class="section" aria-label="Layihələr">
+                <h2 class="section-heading"><span class="num">03.</span> Layihələr</h2>
 
-                <article class="portfolio-card">
-                    <a class="portfolio-image" href="https://olimpmebel.az/" target="_blank" rel="noopener noreferrer">
-                        <img src="assets/images/olimpmebel.jpg" alt="Olimp Mebel saytı" loading="lazy">
-                    </a>
-                    <div class="portfolio-content">
-                        <h3 class="portfolio-title">Olimp Mebel</h3>
-                        <p class="portfolio-description">Mebel şirkətinin saytı və məhsul kataloqu.</p>
-                        <a class="portfolio-more" href="https://olimpmebel.az/" target="_blank" rel="noopener noreferrer">olimpmebel.az →</a>
-                    </div>
-                </article>
-
-                <article class="portfolio-card">
-                    <a class="portfolio-image" href="https://olimpmebel.az/smartexpo/" target="_blank" rel="noopener noreferrer">
-                        <img src="assets/images/smartexpo.jpg" alt="Smart Expo saytı" loading="lazy">
-                    </a>
-                    <div class="portfolio-content">
-                        <h3 class="portfolio-title">Smart Expo</h3>
-                        <p class="portfolio-description">Sərgi stendləri istehsalçısının saytı.</p>
-                        <a class="portfolio-more" href="https://olimpmebel.az/smartexpo/" target="_blank" rel="noopener noreferrer">olimpmebel.az/smartexpo →</a>
-                    </div>
-                </article>
-
-                <article class="portfolio-card">
-                    <a class="portfolio-image" href="https://luxmebel.az/" target="_blank" rel="noopener noreferrer">
-                        <img src="assets/images/luxmebel.jpg" alt="Lux Mebel saytı" loading="lazy">
-                    </a>
-                    <div class="portfolio-content">
-                        <h3 class="portfolio-title">Lux Mebel</h3>
-                        <p class="portfolio-description">Mebel brendinin saytı və qalereyası.</p>
-                        <a class="portfolio-more" href="https://luxmebel.az/" target="_blank" rel="noopener noreferrer">luxmebel.az →</a>
-                    </div>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">Haqqımda</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p class="about-intro">Alpha Media-da IT mütəxəssisiyəm: WordPress saytlar qururam, SEO və sayt idarəsi ilə məşğul oluram. Öz layihələrimi AI kod agentləri ilə qururam. İstiqaməti və tələbləri mən təyin edirəm, nəticəni canlı saytda özüm yoxlayıram.</p>
-
-                    <div class="about-details">
-                        <div class="detail-item">
-                            <h3>İş təcrübəsi</h3>
-                            <p><strong>Alpha Media</strong> · aprel 2025 – indiyədək</p>
-                            <p>IT mütəxəssisi: 5 WordPress sayt, texniki SEO, sayt idarəsi və texniki dəstək.</p>
+                <ul class="featured-list">
+                    <li class="featured">
+                        <div class="featured-content">
+                            <p class="featured-overline">Öz məhsulum · Canlı</p>
+                            <h3 class="featured-title"><a href="https://sitemonitor.com.az" target="_blank" rel="noopener noreferrer">SiteMonitor</a></h3>
+                            <div class="featured-desc">
+                                <p>Veb agentliklər üçün saytları izləyən panel: uptime, SSL, domen və SEO yoxlamaları, e-poçt və Telegram bildirişləri, çox istifadəçi və rollar.</p>
+                            </div>
+                            <ul class="featured-tech">
+                                <li>React + TS</li><li>Node.js</li><li>SQLite</li><li>Fly.io</li>
+                            </ul>
+                            <div class="featured-links">
+                                <a href="https://sitemonitor.com.az" target="_blank" rel="noopener noreferrer" aria-label="SiteMonitor saytını aç">sitemonitor.com.az ↗</a>
+                            </div>
                         </div>
+                        <a class="featured-image" href="https://sitemonitor.com.az" target="_blank" rel="noopener noreferrer" tabindex="-1">
+                            <img src="assets/images/sitemonitor.jpg" alt="SiteMonitor paneli" loading="lazy" width="1440" height="900">
+                        </a>
+                    </li>
 
-                        <div class="detail-item">
-                            <h3>Təhsil</h3>
-                            <p><strong>Azərbaycan Texniki Universiteti</strong></p>
-                            <p>Mexatronika və robototexnika mühəndisliyi, 3-cü kurs</p>
+                    <li class="featured">
+                        <div class="featured-content">
+                            <p class="featured-overline">Öz məhsulum</p>
+                            <h3 class="featured-title">SEO Auditor + WordPress plugin</h3>
+                            <div class="featured-desc">
+                                <p>Saytı gəzib texniki SEO problemlərini vaciblik sırası ilə göstərən alət. Python CLI və WordPress admin panelində işləyən plugin versiyası var, hesabat HTML və PDF formatındadır.</p>
+                            </div>
+                            <ul class="featured-tech">
+                                <li>Python</li><li>Playwright</li><li>PHP</li><li>WP plugin</li>
+                            </ul>
                         </div>
-
-                        <div class="detail-item">
-                            <h3>Bacarıqlar</h3>
-                            <p>WordPress · texniki SEO · React / Node.js əsasları · Git · AI kod agentləri (Claude, Kiro) ilə iş və nəticələrinin yoxlanması</p>
+                        <div class="featured-image">
+                            <img src="assets/images/seo-auditor.jpg" alt="SEO Auditor hesabatı: kritik, xəbərdarlıq və məlumat tapıntıları (nümunə data)" loading="lazy" width="1440" height="900">
                         </div>
+                    </li>
 
-                        <div class="detail-item">
-                            <h3>Dillər</h3>
-                            <p>Azərbaycan dili (ana dili) · İngilis dili (orta)</p>
+                    <li class="featured">
+                        <div class="featured-content">
+                            <p class="featured-overline">SmartExpo üçün</p>
+                            <h3 class="featured-title"><a href="https://smartexpo-karusel.vercel.app" target="_blank" rel="noopener noreferrer">Stend layihələri kataloqu</a></h3>
+                            <div class="featured-desc">
+                                <p>Sərgi stendləri şirkətinin layihələrini ölkələr üzrə göstərən 3D karusel və kataloq. Dörd dil (AZ, TR, RU, EN), şəkillər şirkət saytından skriptlə avtomatik sinxron olunur.</p>
+                            </div>
+                            <ul class="featured-tech">
+                                <li>HTML / CSS / JS</li><li>Node skript</li><li>4 dil</li><li>Vercel</li>
+                            </ul>
+                            <div class="featured-links">
+                                <a href="https://smartexpo-karusel.vercel.app" target="_blank" rel="noopener noreferrer" aria-label="Kataloq demosunu aç">Demoya bax ↗</a>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+                        <a class="featured-image" href="https://smartexpo-karusel.vercel.app" target="_blank" rel="noopener noreferrer" tabindex="-1">
+                            <img src="assets/images/karusel.jpg" alt="SmartExpo stend kataloqunun 3D karusel girişi" loading="lazy" width="1440" height="900">
+                        </a>
+                    </li>
 
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Əlaqə</h2>
-            <div class="contact-cta">
+                    <li class="featured">
+                        <div class="featured-content">
+                            <p class="featured-overline">Daxili sistem</p>
+                            <h3 class="featured-title">SmartExpo Anbar</h3>
+                            <div class="featured-desc">
+                                <p>Sərgi stendləri şirkəti üçün anbar sistemi: malların çıxışı və qayıdışı, sərgi hesabatları, Excel import, rəhbər / anbardar / IT rolları.</p>
+                            </div>
+                            <ul class="featured-tech">
+                                <li>React</li><li>Express</li><li>SQLite</li><li>Rollar</li>
+                            </ul>
+                        </div>
+                        <div class="featured-image">
+                            <img src="assets/images/anbar.jpg" alt="SmartExpo Anbar paneli: anbar və stendlərdəki mallar (nümunə data)" loading="lazy" width="1440" height="900">
+                        </div>
+                    </li>
+                </ul>
+
+                <h3 class="sub-heading">Alpha Media üçün WordPress saytlar</h3>
+                <ul class="other-grid">
+                    <li><a class="other-card" href="https://hamdgroup.az" target="_blank" rel="noopener noreferrer">
+                        <img src="assets/images/hamdgroup.jpg" alt="" loading="lazy" width="1440" height="900">
+                        <span class="other-title">Hamd Group <span aria-hidden="true">↗</span></span>
+                        <span class="other-desc">Korporativ şirkət saytı.</span>
+                    </a></li>
+                    <li><a class="other-card" href="https://olimpmebel.az/" target="_blank" rel="noopener noreferrer">
+                        <img src="assets/images/olimpmebel.jpg" alt="" loading="lazy" width="1440" height="900">
+                        <span class="other-title">Olimp Mebel <span aria-hidden="true">↗</span></span>
+                        <span class="other-desc">Mebel şirkətinin saytı və məhsul kataloqu.</span>
+                    </a></li>
+                    <li><a class="other-card" href="https://olimpmebel.az/smartexpo/" target="_blank" rel="noopener noreferrer">
+                        <img src="assets/images/smartexpo.jpg" alt="" loading="lazy" width="1440" height="900">
+                        <span class="other-title">Smart Expo <span aria-hidden="true">↗</span></span>
+                        <span class="other-desc">Sərgi stendləri istehsalçısının saytı.</span>
+                    </a></li>
+                    <li><a class="other-card" href="https://luxmebel.az/" target="_blank" rel="noopener noreferrer">
+                        <img src="assets/images/luxmebel.jpg" alt="" loading="lazy" width="1440" height="900">
+                        <span class="other-title">Lux Mebel <span aria-hidden="true">↗</span></span>
+                        <span class="other-desc">Mebel brendinin saytı və qalereyası.</span>
+                    </a></li>
+                </ul>
+            </section>
+
+            <section id="services" class="section" aria-label="Xidmətlər">
+                <h2 class="section-heading"><span class="num">04.</span> Xidmətlər</h2>
+                <ol class="service-list">
+                    <li>
+                        <h3>WordPress sayt</h3>
+                        <p>Şirkət saytı və ya kataloq: qurulma, mobil uyğunluq, sürət, təhlükəsizlik. Çoxdilli səhifələr, hosting, domen və SSL.</p>
+                    </li>
+                    <li>
+                        <h3>Texniki SEO audit</h3>
+                        <p>Saytı yoxlayıb problemləri vaciblik sırası ilə göstərirəm və düzəldirəm: başlıq və meta, struktur, indeksləmə, sınıq linklər.</p>
+                    </li>
+                    <li>
+                        <h3>Monitorinq və baxım</h3>
+                        <p>Saytınız dayananda, SSL və ya domen vaxtı bitəndə ilk siz bilirsiniz. Aylıq baxım və yeniləmə.</p>
+                    </li>
+                    <li>
+                        <h3>AI + kodla alətlər</h3>
+                        <p>Excel-də, kağızda görülən işi sadə veb proqrama çevirirəm: anbar, sifariş, hesabat, rollar, Excel import / export.</p>
+                    </li>
+                </ol>
+                <p class="note">Qiymət işin həcminə görədir. Qısa yazın, eyni gün cavab verirəm.</p>
+            </section>
+
+            <section id="contact" class="section contact" aria-label="Əlaqə">
+                <p class="contact-overline"><span class="num">05.</span> Növbəti addım</p>
+                <h2 class="contact-title">Gəlin danışaq</h2>
                 <p>Saytınız, SEO-nuz və ya əl ilə görülən bir işiniz var? Qısa yazın, nə edə biləcəyimi deyim.</p>
-                <div class="hero-actions">
-                    <a href="https://wa.me/994517881550" target="_blank" rel="noopener noreferrer" class="btn btn-primary">WhatsApp-da yazın</a>
-                    <a href="mailto:merdanagcabeyli@gmail.com" class="btn btn-secondary">merdanagcabeyli@gmail.com</a>
+                <div class="contact-actions">
+                    <a href="https://wa.me/994517881550" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg">WhatsApp-da yazın</a>
+                    <a href="mailto:merdanagcabeyli@gmail.com" class="btn btn-ghost btn-lg">E-poçt göndərin</a>
                 </div>
-                <div class="contact-social">
-                    <a href="https://github.com/Myr-01" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
+            </section>
 
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2026 Mərdan Ağcabəyli · Bakı</p>
-        </div>
-    </footer>
-
-    <button id="scrollToTop" class="scroll-to-top" aria-label="Yuxarı qalx">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" /></svg>
-    </button>
+            <footer class="footer">
+                <p>Dizayn və kod: Mərdan Ağcabəyli, AI kod agentləri ilə. Space Grotesk və Inter şriftləri. &copy; <span id="year">2026</span> · Bakı</p>
+            </footer>
+        </main>
+    </div>
 
     <script src="js/script.js"></script>
 </body>
