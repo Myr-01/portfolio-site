@@ -624,8 +624,9 @@ strong {
         transform: scale(1.02);
     }
 
+    /* Kart şəklə yalnız 1 sütun girir: şəklin çox hissəsi açıq qalır */
     .featured-content {
-        grid-column: 1 / 8;
+        grid-column: 1 / 7;
         grid-row: 1 / -1;
         padding: 0;
     }
@@ -645,7 +646,7 @@ strong {
     }
 
     .featured:nth-child(even) .featured-content {
-        grid-column: 6 / -1;
+        grid-column: 7 / -1;
         text-align: right;
     }
 
